@@ -9,7 +9,7 @@ let opacity = 1;
 
 document.body.onload = () =>
 {
-
+    console.log("loaded");
     size_slider.value = brush_size;
     opacity_slider.value = opacity * 10;
 
