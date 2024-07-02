@@ -1,0 +1,96 @@
+body
+{
+    background: rgb(75, 43, 95);
+}
+
+#thewholething
+{
+    position: relative;
+    display: flex;
+    flex: 1;
+    -moz-box-flex: 1;
+}
+#content
+{
+    display: flex;
+    position: absolute;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    margin-left: -500px;
+
+    width: 1000px;
+    height: 698px;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+#colorTray
+{
+    width: 120px;
+
+}
+
+#tools
+{
+    height: 700px;
+}
+
+.canvas
+{
+    width: 700px;
+    height: 400px;
+    left: auto;
+    position: relative;
+    
+}
+
+#colorMixer
+{
+    height: 40px;
+    width: 100px;
+}
+
+#backgroundCanvas
+{
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    border: 2px solid;
+    align-self: center;
+    position: absolute;
+    background: white;
+}
+
+#drawCanvas
+{
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    border: 2px solid;
+    position: absolute;
+    
+    align-self: center;
+}
+
+#strokeCanvas
+{
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    border: 2px solid;
+    position: absolute;
+    
+    align-self: center;
+}
+
+.button
+{
+    height: 30px;
+    width: 60px;
+    background: white;
+}
