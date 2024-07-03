@@ -31,8 +31,8 @@ document.body.onload = () =>
     }
 
     var rect = everything.getBoundingClientRect();
-    offsetL = rect.x + container.offsetLeft + window.scrollX;
-    offsetT = rect.y + container.offsetTop + window.scrollY;
+    offsetL = rect.x + container.offsetLeft + window.scrollX + 2; 
+    offsetT = rect.y + container.offsetTop + window.scrollY + 4;
 }
 
 const bg_canvas = document.getElementById("backgroundCanvas");
@@ -72,8 +72,8 @@ let brush_color = "black";
 
 var rect = everything.getBoundingClientRect();
 
-let offsetL = rect.x + container.offsetLeft;
-let offsetT = rect.y + container.offsetTop;
+let offsetL = rect.x + container.offsetLeft - 2;
+let offsetT = rect.y + container.offsetTop - 4;
 
 let undo_arr = [];
 let redo_arr = [];
@@ -89,8 +89,8 @@ function beginDraw(e)
     }
     else
     {
-        x = e.layerX;
-        y = e.layerY;
+        x = e.layerX - 2;
+        y = e.layerY - 4;
     }
     
     switch (tool)
@@ -141,8 +141,8 @@ function stopDraw(e)
         }
         else
         {
-            x = e.layerX;
-            y = e.layerY;
+            x = e.layerX - 2;
+            y = e.layerY - 4;
         }
         is_drawing = false;
         switch (tool)
@@ -184,8 +184,8 @@ function Draw(e)
         }
         else
         {
-            x = e.layerX;
-            y = e.layerY;
+            x = e.layerX - 2;
+            y = e.layerY - 4;
         }
 
         switch (tool)
@@ -352,6 +352,6 @@ window.addEventListener("resize", () => {
     
     var rect = everything.getBoundingClientRect();
 
-    offsetL = rect.x + container.offsetLeft;
-    offsetT = rect.y + container.offsetTop;
+    offsetL = rect.x + container.offsetLeft + window.scrollX + 2; 
+    offsetT = rect.y + container.offsetTop + window.scrollY + 4;
 });

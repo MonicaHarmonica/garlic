@@ -86,6 +86,8 @@ body
     position: absolute;
     
     align-self: center;
+
+    cursor: crosshair;
 }
 
 .button
